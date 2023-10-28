@@ -1,6 +1,6 @@
 # Optimizador de Windows 11 basado en BloatyNosy - BetterBloatyNosy (Bloaty & Nosy) -
 
-![captura de pantalla](https://github.com/builtbybel/BloatyNosy/blob/main/assets/bloatynosy.png?raw=true)
+![captura de pantalla](https://github.com/Kristiansito/BetterBloatyNosy/blob/main/assets/bloatynosy.png?raw=true)
 
 _Desbloqueador universal y gestor de PC para la versión más actualizada del sistema operativo Redmond (Windows 11)_
 
