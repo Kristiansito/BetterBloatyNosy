@@ -43,7 +43,7 @@ namespace BloatyNosy
             BackColor =
             tvwFeatures.BackColor =
             rtbLog.BackColor =
-                   Color.FromArgb(239, 239, 247);
+                   Color.FromArgb(25, 25, 25);
             logger.SetTarget(rtbLog);          // Log messages to target richLog
             INavPage = pnlForm.Controls[0];     // Set default NavPage
 
@@ -58,7 +58,7 @@ namespace BloatyNosy
             if (!HelperTool.Utils.IsInet())
             { lblInetCheck.Visible = true; }
             else
-                pbBackground.ImageLocation = "https://github.com/builtbybel/BloatyNosy/blob/main/assets/BackgroundImage.png?raw=true";
+                pbBackground.ImageLocation = "https://github.com/Kristiansito/BetterBloatyNosy/blob/main/assets/BackgroundImage.png?raw=true";
         }
 
         public void SetView(Control View)
@@ -604,5 +604,9 @@ namespace BloatyNosy
         private void lnkAppMediaDonate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
           => Process.Start(HelperTool.Utils.Uri.URL_DONATE);
 
+        private void rtbLog_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

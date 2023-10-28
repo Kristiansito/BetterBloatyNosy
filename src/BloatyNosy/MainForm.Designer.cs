@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.pnlForm = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.lnkUpdateCheck = new System.Windows.Forms.LinkLabel();
             this._lblAssembly = new System.Windows.Forms.Label();
             this.lnkAppMediaHelp = new System.Windows.Forms.LinkLabel();
@@ -44,7 +45,6 @@
             this.lblHeader = new System.Windows.Forms.Label();
             this.btnKebapMenu = new System.Windows.Forms.Button();
             this.btnAnalyze = new System.Windows.Forms.Button();
-            this.lnkSubHeader = new System.Windows.Forms.LinkLabel();
             this.progress = new System.Windows.Forms.ProgressBar();
             this.lblTools = new System.Windows.Forms.Label();
             this.cmbTools = new System.Windows.Forms.ComboBox();
@@ -53,6 +53,7 @@
             this.border = new System.Windows.Forms.Button();
             this.lblInetCheck = new System.Windows.Forms.Label();
             this.pbBackground = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.contextKebapMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textHeaderAppInfo = new System.Windows.Forms.ToolStripTextBox();
             this.menuIgnoreLowLevelI = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,7 +72,6 @@
             this.menuRestoreInfo = new System.Windows.Forms.ToolStripTextBox();
             this.contextAppMenuOptions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuAppConfigure = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnBack = new System.Windows.Forms.Button();
             this.pnlForm.SuspendLayout();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).BeginInit();
@@ -94,6 +94,7 @@
             // 
             this.pnlMain.AutoScroll = true;
             this.pnlMain.AutoSize = true;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.pnlMain.Controls.Add(this.btnBack);
             this.pnlMain.Controls.Add(this.lnkUpdateCheck);
             this.pnlMain.Controls.Add(this._lblAssembly);
@@ -108,7 +109,6 @@
             this.pnlMain.Controls.Add(this.lblHeader);
             this.pnlMain.Controls.Add(this.btnKebapMenu);
             this.pnlMain.Controls.Add(this.btnAnalyze);
-            this.pnlMain.Controls.Add(this.lnkSubHeader);
             this.pnlMain.Controls.Add(this.progress);
             this.pnlMain.Controls.Add(this.lblTools);
             this.pnlMain.Controls.Add(this.cmbTools);
@@ -117,27 +117,47 @@
             this.pnlMain.Controls.Add(this.border);
             this.pnlMain.Controls.Add(this.lblInetCheck);
             this.pnlMain.Controls.Add(this.pbBackground);
+            this.pnlMain.Controls.Add(this.label1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1014, 663);
             this.pnlMain.TabIndex = 0;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnBack.Location = new System.Drawing.Point(0, 0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(42, 38);
+            this.btnBack.TabIndex = 220;
+            this.btnBack.Text = "...";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // lnkUpdateCheck
             // 
-            this.lnkUpdateCheck.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkUpdateCheck.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkUpdateCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkUpdateCheck.AutoEllipsis = true;
             this.lnkUpdateCheck.AutoSize = true;
-            this.lnkUpdateCheck.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkUpdateCheck.BackColor = System.Drawing.Color.Transparent;
+            this.lnkUpdateCheck.Cursor = System.Windows.Forms.Cursors.No;
+            this.lnkUpdateCheck.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F);
+            this.lnkUpdateCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkUpdateCheck.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkUpdateCheck.LinkColor = System.Drawing.Color.MediumVioletRed;
-            this.lnkUpdateCheck.Location = new System.Drawing.Point(287, 553);
+            this.lnkUpdateCheck.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.lnkUpdateCheck.Location = new System.Drawing.Point(266, 541);
             this.lnkUpdateCheck.Name = "lnkUpdateCheck";
-            this.lnkUpdateCheck.Size = new System.Drawing.Size(92, 15);
+            this.lnkUpdateCheck.Size = new System.Drawing.Size(134, 15);
             this.lnkUpdateCheck.TabIndex = 203;
             this.lnkUpdateCheck.TabStop = true;
-            this.lnkUpdateCheck.Text = "Check for updates";
+            this.lnkUpdateCheck.Text = "Comprobar actualizaciones";
             this.lnkUpdateCheck.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkUpdateCheck.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUpdateCheck_LinkClicked);
             // 
@@ -147,84 +167,92 @@
             this._lblAssembly.AutoEllipsis = true;
             this._lblAssembly.AutoSize = true;
             this._lblAssembly.BackColor = System.Drawing.Color.Transparent;
-            this._lblAssembly.Font = new System.Drawing.Font("Segoe UI Variable Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._lblAssembly.ForeColor = System.Drawing.Color.Gray;
+            this._lblAssembly.Font = new System.Drawing.Font("Segoe Fluent Icons", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lblAssembly.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this._lblAssembly.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this._lblAssembly.Location = new System.Drawing.Point(287, 568);
+            this._lblAssembly.Location = new System.Drawing.Point(266, 557);
             this._lblAssembly.Name = "_lblAssembly";
-            this._lblAssembly.Size = new System.Drawing.Size(43, 15);
+            this._lblAssembly.Size = new System.Drawing.Size(42, 15);
             this._lblAssembly.TabIndex = 202;
-            this._lblAssembly.Text = "Version";
+            this._lblAssembly.Text = "Versión";
             // 
             // lnkAppMediaHelp
             // 
-            this.lnkAppMediaHelp.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaHelp.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkAppMediaHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkAppMediaHelp.AutoEllipsis = true;
             this.lnkAppMediaHelp.AutoSize = true;
-            this.lnkAppMediaHelp.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkAppMediaHelp.BackColor = System.Drawing.Color.Transparent;
+            this.lnkAppMediaHelp.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F);
+            this.lnkAppMediaHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaHelp.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkAppMediaHelp.LinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaHelp.Location = new System.Drawing.Point(24, 587);
             this.lnkAppMediaHelp.Name = "lnkAppMediaHelp";
-            this.lnkAppMediaHelp.Size = new System.Drawing.Size(46, 15);
+            this.lnkAppMediaHelp.Size = new System.Drawing.Size(37, 15);
             this.lnkAppMediaHelp.TabIndex = 201;
             this.lnkAppMediaHelp.TabStop = true;
-            this.lnkAppMediaHelp.Text = "Get help";
-            this.lnkAppMediaHelp.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaHelp.Text = "Ayuda";
+            this.lnkAppMediaHelp.VisitedLinkColor = System.Drawing.Color.White;
             this.lnkAppMediaHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaHelp_LinkClicked);
             // 
             // lnkAppMediaDonate
             // 
-            this.lnkAppMediaDonate.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaDonate.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkAppMediaDonate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkAppMediaDonate.AutoEllipsis = true;
             this.lnkAppMediaDonate.AutoSize = true;
-            this.lnkAppMediaDonate.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkAppMediaDonate.BackColor = System.Drawing.Color.Transparent;
+            this.lnkAppMediaDonate.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F);
+            this.lnkAppMediaDonate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaDonate.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkAppMediaDonate.LinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaDonate.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaDonate.Location = new System.Drawing.Point(24, 572);
             this.lnkAppMediaDonate.Name = "lnkAppMediaDonate";
-            this.lnkAppMediaDonate.Size = new System.Drawing.Size(42, 15);
+            this.lnkAppMediaDonate.Size = new System.Drawing.Size(37, 15);
             this.lnkAppMediaDonate.TabIndex = 200;
             this.lnkAppMediaDonate.TabStop = true;
-            this.lnkAppMediaDonate.Text = "Donate";
+            this.lnkAppMediaDonate.Text = "Donar";
             this.lnkAppMediaDonate.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkAppMediaDonate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaDonate_LinkClicked);
             // 
             // lnkAppMediaGitHub
             // 
-            this.lnkAppMediaGitHub.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaGitHub.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkAppMediaGitHub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkAppMediaGitHub.AutoEllipsis = true;
             this.lnkAppMediaGitHub.AutoSize = true;
-            this.lnkAppMediaGitHub.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkAppMediaGitHub.BackColor = System.Drawing.Color.Transparent;
+            this.lnkAppMediaGitHub.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F);
+            this.lnkAppMediaGitHub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaGitHub.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkAppMediaGitHub.LinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaGitHub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaGitHub.Location = new System.Drawing.Point(23, 541);
             this.lnkAppMediaGitHub.Name = "lnkAppMediaGitHub";
-            this.lnkAppMediaGitHub.Size = new System.Drawing.Size(86, 15);
+            this.lnkAppMediaGitHub.Size = new System.Drawing.Size(99, 15);
             this.lnkAppMediaGitHub.TabIndex = 198;
             this.lnkAppMediaGitHub.TabStop = true;
-            this.lnkAppMediaGitHub.Text = "Follow on GitHub";
+            this.lnkAppMediaGitHub.Text = "Síguenos en GitHub";
             this.lnkAppMediaGitHub.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkAppMediaGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaGitHub_LinkClicked);
             // 
             // lnkAppMediaTwitter
             // 
-            this.lnkAppMediaTwitter.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaTwitter.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkAppMediaTwitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkAppMediaTwitter.AutoEllipsis = true;
             this.lnkAppMediaTwitter.AutoSize = true;
-            this.lnkAppMediaTwitter.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkAppMediaTwitter.BackColor = System.Drawing.Color.Transparent;
+            this.lnkAppMediaTwitter.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 8.25F);
+            this.lnkAppMediaTwitter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaTwitter.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkAppMediaTwitter.LinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lnkAppMediaTwitter.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaTwitter.Location = new System.Drawing.Point(23, 557);
             this.lnkAppMediaTwitter.Name = "lnkAppMediaTwitter";
-            this.lnkAppMediaTwitter.Size = new System.Drawing.Size(105, 15);
+            this.lnkAppMediaTwitter.Size = new System.Drawing.Size(98, 15);
             this.lnkAppMediaTwitter.TabIndex = 199;
             this.lnkAppMediaTwitter.TabStop = true;
-            this.lnkAppMediaTwitter.Text = "Follow dev on Twitter";
+            this.lnkAppMediaTwitter.Text = "Síguenos en Twitter";
             this.lnkAppMediaTwitter.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkAppMediaTwitter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaTwitter_LinkClicked);
             // 
@@ -234,57 +262,62 @@
             this._lblAboutInfo.AutoEllipsis = true;
             this._lblAboutInfo.AutoSize = true;
             this._lblAboutInfo.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._lblAboutInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._lblAboutInfo.ForeColor = System.Drawing.Color.White;
             this._lblAboutInfo.Location = new System.Drawing.Point(23, 520);
             this._lblAboutInfo.Name = "_lblAboutInfo";
-            this._lblAboutInfo.Size = new System.Drawing.Size(101, 17);
+            this._lblAboutInfo.Size = new System.Drawing.Size(144, 17);
             this._lblAboutInfo.TabIndex = 197;
-            this._lblAboutInfo.Text = "About this App";
+            this._lblAboutInfo.Text = "Acerca de la aplicación";
             // 
             // lnkStatus
             // 
+            this.lnkStatus.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkStatus.AutoEllipsis = true;
+            this.lnkStatus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lnkStatus.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F);
-            this.lnkStatus.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.lnkStatus.LinkColor = System.Drawing.Color.MediumBlue;
-            this.lnkStatus.Location = new System.Drawing.Point(593, 117);
+            this.lnkStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.lnkStatus.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkStatus.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.lnkStatus.Location = new System.Drawing.Point(589, 118);
             this.lnkStatus.Name = "lnkStatus";
-            this.lnkStatus.Size = new System.Drawing.Size(409, 23);
+            this.lnkStatus.Size = new System.Drawing.Size(106, 22);
             this.lnkStatus.TabIndex = 196;
             this.lnkStatus.TabStop = true;
-            this.lnkStatus.Text = "Learn more";
+            this.lnkStatus.Text = "Más información";
             this.lnkStatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkStatus_LinkClicked);
             // 
             // lnkRunSetup
             // 
+            this.lnkRunSetup.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkRunSetup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkRunSetup.AutoSize = true;
             this.lnkRunSetup.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkRunSetup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkRunSetup.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkRunSetup.LinkColor = System.Drawing.Color.MediumBlue;
-            this.lnkRunSetup.Location = new System.Drawing.Point(646, 605);
+            this.lnkRunSetup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.lnkRunSetup.Location = new System.Drawing.Point(621, 604);
             this.lnkRunSetup.Name = "lnkRunSetup";
-            this.lnkRunSetup.Size = new System.Drawing.Size(85, 17);
+            this.lnkRunSetup.Size = new System.Drawing.Size(99, 17);
             this.lnkRunSetup.TabIndex = 179;
             this.lnkRunSetup.TabStop = true;
-            this.lnkRunSetup.Text = "Use Assistant";
+            this.lnkRunSetup.Text = "Asistente virtual";
             this.lnkRunSetup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRunSetup_LinkClicked);
             // 
             // btnAppOptions
             // 
             this.btnAppOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAppOptions.AutoEllipsis = true;
-            this.btnAppOptions.BackColor = System.Drawing.Color.Transparent;
+            this.btnAppOptions.BackColor = System.Drawing.Color.White;
             this.btnAppOptions.FlatAppearance.BorderSize = 0;
             this.btnAppOptions.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppOptions.ForeColor = System.Drawing.Color.Black;
-            this.btnAppOptions.Location = new System.Drawing.Point(784, 595);
+            this.btnAppOptions.Location = new System.Drawing.Point(726, 595);
             this.btnAppOptions.Name = "btnAppOptions";
             this.btnAppOptions.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.btnAppOptions.Size = new System.Drawing.Size(62, 35);
+            this.btnAppOptions.Size = new System.Drawing.Size(120, 35);
             this.btnAppOptions.TabIndex = 178;
-            this.btnAppOptions.Text = "Fix";
+            this.btnAppOptions.Text = "Aplicar";
             this.btnAppOptions.UseVisualStyleBackColor = false;
             this.btnAppOptions.Click += new System.EventHandler(this.btnAppOptions_Click);
             // 
@@ -294,21 +327,22 @@
             this.lblHeader.AutoEllipsis = true;
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 18.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lblHeader.Location = new System.Drawing.Point(472, 36);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(378, 33);
+            this.lblHeader.Size = new System.Drawing.Size(424, 33);
             this.lblHeader.TabIndex = 176;
-            this.lblHeader.Text = "Let\'s customize your experience";
+            this.lblHeader.Text = "Vamos a personalizar tu experiencia";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnKebapMenu
             // 
             this.btnKebapMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKebapMenu.FlatAppearance.BorderSize = 0;
-            this.btnKebapMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnKebapMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnKebapMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKebapMenu.Font = new System.Drawing.Font("Segoe Fluent Icons", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKebapMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnKebapMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnKebapMenu.Location = new System.Drawing.Point(960, 3);
             this.btnKebapMenu.Name = "btnKebapMenu";
             this.btnKebapMenu.Size = new System.Drawing.Size(42, 47);
@@ -322,36 +356,20 @@
             // 
             this.btnAnalyze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnalyze.AutoEllipsis = true;
-            this.btnAnalyze.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnalyze.BackColor = System.Drawing.Color.White;
+            this.btnAnalyze.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAnalyze.FlatAppearance.BorderSize = 0;
+            this.btnAnalyze.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnAnalyze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAnalyze.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnalyze.ForeColor = System.Drawing.Color.Black;
             this.btnAnalyze.Location = new System.Drawing.Point(852, 595);
             this.btnAnalyze.Name = "btnAnalyze";
             this.btnAnalyze.Size = new System.Drawing.Size(120, 35);
             this.btnAnalyze.TabIndex = 27;
-            this.btnAnalyze.Text = "Analyze ";
+            this.btnAnalyze.Text = "Analizar";
             this.btnAnalyze.UseVisualStyleBackColor = false;
             this.btnAnalyze.Click += new System.EventHandler(this.btnAnalyze_Click);
-            // 
-            // lnkSubHeader
-            // 
-            this.lnkSubHeader.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
-            this.lnkSubHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lnkSubHeader.AutoEllipsis = true;
-            this.lnkSubHeader.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkSubHeader.ForeColor = System.Drawing.Color.Black;
-            this.lnkSubHeader.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lnkSubHeader.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkSubHeader.LinkColor = System.Drawing.Color.Gray;
-            this.lnkSubHeader.Location = new System.Drawing.Point(475, 84);
-            this.lnkSubHeader.Name = "lnkSubHeader";
-            this.lnkSubHeader.Size = new System.Drawing.Size(517, 56);
-            this.lnkSubHeader.TabIndex = 171;
-            this.lnkSubHeader.TabStop = true;
-            this.lnkSubHeader.Text = "Select all the ways you don\'t plan to use your device to get personalized tip, ad" +
-    "s, recommendation within Microsoft expericences. You can always revert these Set" +
-    "tings to default.";
             // 
             // progress
             // 
@@ -367,12 +385,12 @@
             this.lblTools.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTools.AutoSize = true;
             this.lblTools.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTools.ForeColor = System.Drawing.Color.DeepPink;
+            this.lblTools.ForeColor = System.Drawing.Color.White;
             this.lblTools.Location = new System.Drawing.Point(33, 627);
             this.lblTools.Name = "lblTools";
-            this.lblTools.Size = new System.Drawing.Size(35, 15);
+            this.lblTools.Size = new System.Drawing.Size(97, 15);
             this.lblTools.TabIndex = 25;
-            this.lblTools.Text = "NEW!";
+            this.lblTools.Text = "Más herramientas";
             // 
             // cmbTools
             // 
@@ -385,7 +403,7 @@
             this.cmbTools.FormattingEnabled = true;
             this.cmbTools.IntegralHeight = false;
             this.cmbTools.ItemHeight = 21;
-            this.cmbTools.Location = new System.Drawing.Point(76, 619);
+            this.cmbTools.Location = new System.Drawing.Point(136, 619);
             this.cmbTools.Name = "cmbTools";
             this.cmbTools.Size = new System.Drawing.Size(150, 29);
             this.cmbTools.TabIndex = 19;
@@ -395,11 +413,11 @@
             // 
             this.rtbLog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbLog.BackColor = System.Drawing.Color.White;
+            this.rtbLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.rtbLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbLog.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.rtbLog.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbLog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rtbLog.ForeColor = System.Drawing.Color.White;
             this.rtbLog.HideSelection = false;
             this.rtbLog.Location = new System.Drawing.Point(489, 192);
             this.rtbLog.Name = "rtbLog";
@@ -409,6 +427,7 @@
             this.rtbLog.Text = "";
             this.rtbLog.Visible = false;
             this.rtbLog.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richLog_LinkClicked);
+            this.rtbLog.TextChanged += new System.EventHandler(this.rtbLog_TextChanged);
             // 
             // tvwFeatures
             // 
@@ -440,6 +459,7 @@
             this.border.FlatAppearance.BorderSize = 2;
             this.border.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.border.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.border.ForeColor = System.Drawing.Color.White;
             this.border.Location = new System.Drawing.Point(478, 177);
             this.border.Name = "border";
             this.border.Size = new System.Drawing.Size(481, 403);
@@ -452,13 +472,15 @@
             this.lblInetCheck.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInetCheck.AutoEllipsis = true;
+            this.lblInetCheck.BackColor = System.Drawing.Color.Transparent;
             this.lblInetCheck.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInetCheck.ForeColor = System.Drawing.Color.White;
             this.lblInetCheck.Location = new System.Drawing.Point(33, 177);
             this.lblInetCheck.Name = "lblInetCheck";
             this.lblInetCheck.Size = new System.Drawing.Size(357, 42);
             this.lblInetCheck.TabIndex = 195;
-            this.lblInetCheck.Text = "We cannot connect to the Internet. \r\nSome functions of BloatyNosy are not availab" +
-    "le.";
+            this.lblInetCheck.Text = "No hay conexión a Internet.\r\nAlgunas funciones de BetterBloatyNosy no estarán dis" +
+    "ponibles.\r\n\r\n";
             this.lblInetCheck.Visible = false;
             // 
             // pbBackground
@@ -475,6 +497,21 @@
             this.pbBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbBackground.TabIndex = 182;
             this.pbBackground.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.label1.Location = new System.Drawing.Point(475, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(509, 51);
+            this.label1.TabIndex = 221;
+            this.label1.Text = "Seleccione todas las funciones que no planee utilizar en su dispositivo para cons" +
+    "eguir\r\nun entorno más ajustado a sus necesidades. Siempre puede revertir estos c" +
+    "ambios a\r\nsu estado original.\r\n";
             // 
             // contextKebapMenu
             // 
@@ -655,22 +692,6 @@
             this.menuAppConfigure.Text = "Configure this app";
             this.menuAppConfigure.Click += new System.EventHandler(this.menuAppConfigure_Click);
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(0, 0);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(42, 38);
-            this.btnBack.TabIndex = 220;
-            this.btnBack.Text = "...";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -683,7 +704,7 @@
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BloatyNosy";
+            this.Text = "BetterBloatyNosy";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.pnlForm.ResumeLayout(false);
             this.pnlForm.PerformLayout();
@@ -707,7 +728,6 @@
         private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.RichTextBox rtbLog;
         private System.Windows.Forms.ProgressBar progress;
-        private System.Windows.Forms.LinkLabel lnkSubHeader;
         private System.Windows.Forms.TreeView tvwFeatures;
         private System.Windows.Forms.Button btnKebapMenu;
         private System.Windows.Forms.ContextMenuStrip contextKebapMenu;
@@ -730,7 +750,6 @@
         private System.Windows.Forms.ToolStripComboBox cbProfiles;
         private System.Windows.Forms.ToolStripTextBox textExplanation;
         private System.Windows.Forms.PictureBox pbBackground;
-        private System.Windows.Forms.Button border;
         private System.Windows.Forms.Label lblInetCheck;
         private System.Windows.Forms.LinkLabel lnkStatus;
         private System.Windows.Forms.Label _lblAboutInfo;
@@ -743,6 +762,8 @@
         private System.Windows.Forms.ToolStripTextBox textHeaderAppInfo;
         private System.Windows.Forms.ToolStripTextBox textHeaderExperience;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button border;
+        private System.Windows.Forms.Label label1;
     }
 }
 
