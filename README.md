@@ -1,28 +1,14 @@
-# Let's customize your Windows 11 experience with - BloatyNosy (Bloaty & Nosy) -
+# Optimizador de Windows 11 basado en BloatyNosy - BetterBloatyNosy (Bloaty & Nosy) -
 
-![screenshot](https://github.com/builtbybel/BloatyNosy/blob/main/assets/bloatynosy.png?raw=true)
+![captura de pantalla](https://github.com/Kristiansito/BetterBloatyNosy/blob/main/assets/bloatynosy.png?raw=true)
 
-_Universal Debloater and PC Manager for the most up-to-date version of the Redmond OS (Windows 11)_
+_Desbloqueador universal y gestor de PC para la versión más actualizada del sistema operativo Redmond (Windows 11)_
 
-## Download
-### GitHub (Recommended)
-You can download BloatyNosy directly from the [GitHub releases page](https://github.com/builtbybel/BloatyNosy/releases)
+## Características
+Windows 11 tiene innumerables interruptores y opciones de configuración. Y los usuarios en general no saben dónde encontrar la mayoría de estas funciones, qué hacer con ellas y qué configuración habilitar o deshabilitar. **BloatyNosy** simplifica y agrupa todas las configuraciones esenciales en una sola aplicación y te permite desactivar y eliminar funciones innecesarias con solo un clic.
 
-_The app is also distributed within [App Installer](https://github.com/builtbybel/BloatyNosy/releases) package._
-
-## Features
-Windows 11 has a gazillion toggles and settings options. And general users don’t know where to find most of these features, what to make of them, and which setting to enable or disable. **BloatyNosy** streamlines and houses all the essential settings under one app and allows you to disable and remove unnecessary features with just a simple click. 
-
-- Via the link in the lower right corner **"I want to set up Windows 11 for the first time"**, you can call a **Windows 11 Setup/Assistant** and customize your system step by step and debloat it.
-- You can skip the assistant and let the app module on the main page handle the analysis entirely. It will check and fix a tons of unnecessary components and creating a debloated Windows 11.
-- It features a **BloatPilot app**, which allows you to remove pre-installed apps automatically or the manual way. 
-- The **WinModder app** allows you to apply code snippets based on PowerShell and community scripts.
-- Next to this the app installer **InstaPackage** is integrated, which allows you to install some of the most important apps with a click and in bulk.
-
-
-More infos here https://www.builtbybel.com/apps/bloatynosy
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=builtbybel/BloatyNosy&type=Timeline)](https://star-history.com/#builtbybel/BloatyNosy&Timeline)
-
+- A través del enlace en la esquina inferior derecha **"Quiero configurar Windows 11 por primera vez"**, puedes llamar a un **Asistente/Configurador de Windows 11** y personalizar tu sistema paso a paso y desbloquearlo.
+- Puedes omitir el asistente y dejar que el módulo de la aplicación en la página principal maneje completamente el análisis. Revisará y corregirá una gran cantidad de componentes innecesarios y creará un Windows 11 desbloqueado.
+- Cuenta con una aplicación **BloatPilot**, que te permite eliminar aplicaciones preinstaladas automáticamente o de forma manual.
+- La aplicación **WinModder** te permite aplicar fragmentos de código basados en PowerShell y scripts de la comunidad.
+- Además, está integrado el instalador de la aplicación **InstaPackage**, que te permite instalar algunas de las aplicaciones más importantes con un clic y en masa.
