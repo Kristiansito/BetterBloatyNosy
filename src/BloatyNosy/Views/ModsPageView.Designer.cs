@@ -69,20 +69,20 @@
             this.menuModOpenDir});
             this.contextAppMenu.Name = "menuMain";
             this.contextAppMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.contextAppMenu.Size = new System.Drawing.Size(181, 70);
+            this.contextAppMenu.Size = new System.Drawing.Size(172, 48);
             this.contextAppMenu.Text = "Info";
             // 
             // menuModEdit
             // 
             this.menuModEdit.Name = "menuModEdit";
-            this.menuModEdit.Size = new System.Drawing.Size(180, 22);
+            this.menuModEdit.Size = new System.Drawing.Size(171, 22);
             this.menuModEdit.Text = "Edit Mod";
             this.menuModEdit.Click += new System.EventHandler(this.menuModEdit_Click);
             // 
             // menuModOpenDir
             // 
             this.menuModOpenDir.Name = "menuModOpenDir";
-            this.menuModOpenDir.Size = new System.Drawing.Size(180, 22);
+            this.menuModOpenDir.Size = new System.Drawing.Size(171, 22);
             this.menuModOpenDir.Text = "Open Mods Folder";
             this.menuModOpenDir.Click += new System.EventHandler(this.menuModOpenDir_Click);
             // 
@@ -101,6 +101,7 @@
             // pnlMain
             // 
             this.pnlMain.AutoScroll = true;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.pnlMain.Controls.Add(this.lblStatus);
             this.pnlMain.Controls.Add(this.lblHeader);
             this.pnlMain.Controls.Add(this.btnHMenu);
@@ -125,7 +126,7 @@
             this.lblStatus.AutoEllipsis = true;
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.ForeColor = System.Drawing.Color.HotPink;
+            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lblStatus.Location = new System.Drawing.Point(88, 106);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(94, 17);
@@ -136,8 +137,8 @@
             // 
             this.lblHeader.AutoEllipsis = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblHeader.Location = new System.Drawing.Point(87, 4);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(83, 6);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(114, 26);
             this.lblHeader.TabIndex = 204;
@@ -146,10 +147,10 @@
             // btnHMenu
             // 
             this.btnHMenu.FlatAppearance.BorderSize = 0;
-            this.btnHMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnHMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnHMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHMenu.Font = new System.Drawing.Font("Segoe Fluent Icons", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHMenu.ForeColor = System.Drawing.Color.Black;
+            this.btnHMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnHMenu.Location = new System.Drawing.Point(35, 0);
             this.btnHMenu.Name = "btnHMenu";
             this.btnHMenu.Size = new System.Drawing.Size(42, 38);
@@ -161,7 +162,7 @@
             // btnBack
             // 
             this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -175,12 +176,12 @@
             // 
             // lnkExploreMods
             // 
-            this.lnkExploreMods.ActiveLinkColor = System.Drawing.Color.DeepPink;
+            this.lnkExploreMods.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkExploreMods.AutoSize = true;
             this.lnkExploreMods.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkExploreMods.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkExploreMods.LinkColor = System.Drawing.Color.HotPink;
-            this.lnkExploreMods.Location = new System.Drawing.Point(229, 4);
+            this.lnkExploreMods.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.lnkExploreMods.Location = new System.Drawing.Point(203, 6);
             this.lnkExploreMods.Name = "lnkExploreMods";
             this.lnkExploreMods.Size = new System.Drawing.Size(129, 26);
             this.lnkExploreMods.TabIndex = 201;
@@ -203,7 +204,7 @@
             // 
             // tabDescription
             // 
-            this.tabDescription.BackColor = System.Drawing.SystemColors.Control;
+            this.tabDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.tabDescription.Controls.Add(this.rtbDesc);
             this.tabDescription.Location = new System.Drawing.Point(4, 24);
             this.tabDescription.Name = "tabDescription";
@@ -217,7 +218,7 @@
             this.rtbDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbDesc.BackColor = System.Drawing.SystemColors.Control;
+            this.rtbDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.rtbDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbDesc.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -272,12 +273,12 @@
             // 
             // lnkCode
             // 
-            this.lnkCode.ActiveLinkColor = System.Drawing.Color.DeepPink;
+            this.lnkCode.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkCode.AutoSize = true;
             this.lnkCode.Font = new System.Drawing.Font("Segoe UI Variable Display Semil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkCode.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkCode.LinkColor = System.Drawing.Color.HotPink;
+            this.lnkCode.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkCode.Location = new System.Drawing.Point(172, 531);
             this.lnkCode.Name = "lnkCode";
             this.lnkCode.Size = new System.Drawing.Size(38, 17);
@@ -288,12 +289,12 @@
             // 
             // lnkDesc
             // 
-            this.lnkDesc.ActiveLinkColor = System.Drawing.Color.DeepPink;
+            this.lnkDesc.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkDesc.AutoSize = true;
             this.lnkDesc.Font = new System.Drawing.Font("Segoe UI Variable Display Semil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkDesc.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkDesc.LinkColor = System.Drawing.Color.HotPink;
+            this.lnkDesc.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkDesc.Location = new System.Drawing.Point(91, 531);
             this.lnkDesc.Name = "lnkDesc";
             this.lnkDesc.Size = new System.Drawing.Size(71, 17);
@@ -330,9 +331,10 @@
             this.listMods.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listMods.BackColor = System.Drawing.SystemColors.Control;
+            this.listMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.listMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listMods.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listMods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.listMods.FormattingEnabled = true;
             this.listMods.Location = new System.Drawing.Point(92, 140);
             this.listMods.Name = "listMods";

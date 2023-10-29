@@ -41,7 +41,7 @@
             // btnBack
             // 
             this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -55,12 +55,12 @@
             // 
             // lnkNoModsSig
             // 
-            this.lnkNoModsSig.ActiveLinkColor = System.Drawing.Color.DeepPink;
+            this.lnkNoModsSig.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkNoModsSig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkNoModsSig.AutoSize = true;
             this.lnkNoModsSig.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkNoModsSig.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkNoModsSig.LinkColor = System.Drawing.Color.DeepPink;
+            this.lnkNoModsSig.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkNoModsSig.Location = new System.Drawing.Point(119, 459);
             this.lnkNoModsSig.Name = "lnkNoModsSig";
             this.lnkNoModsSig.Size = new System.Drawing.Size(229, 17);
@@ -73,8 +73,8 @@
             // 
             this.lblHeader.AutoEllipsis = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblHeader.Location = new System.Drawing.Point(87, 4);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(48, 4);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(251, 26);
             this.lblHeader.TabIndex = 205;
@@ -85,7 +85,7 @@
             this.lvMods.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvMods.BackColor = System.Drawing.SystemColors.Control;
+            this.lvMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.lvMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvMods.CheckBoxes = true;
             this.lvMods.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,9 +104,9 @@
             // btnInstall
             // 
             this.btnInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInstall.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.btnInstall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.btnInstall.Enabled = false;
-            this.btnInstall.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.btnInstall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnInstall.FlatAppearance.BorderSize = 0;
             this.btnInstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInstall.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,6 +134,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(110, 426);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 17);
@@ -142,12 +143,12 @@
             // 
             // lnkGetModsOnline
             // 
-            this.lnkGetModsOnline.ActiveLinkColor = System.Drawing.Color.DeepPink;
+            this.lnkGetModsOnline.ActiveLinkColor = System.Drawing.Color.LightSteelBlue;
             this.lnkGetModsOnline.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lnkGetModsOnline.AutoSize = true;
             this.lnkGetModsOnline.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkGetModsOnline.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lnkGetModsOnline.LinkColor = System.Drawing.Color.DeepPink;
+            this.lnkGetModsOnline.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkGetModsOnline.Location = new System.Drawing.Point(119, 490);
             this.lnkGetModsOnline.Name = "lnkGetModsOnline";
             this.lnkGetModsOnline.Size = new System.Drawing.Size(105, 17);
@@ -161,6 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Controls.Add(this.lnkGetModsOnline);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progress);

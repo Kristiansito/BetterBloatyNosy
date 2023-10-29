@@ -131,7 +131,7 @@
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnBack.Location = new System.Drawing.Point(0, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(42, 38);
@@ -281,7 +281,7 @@
             this.lnkStatus.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkStatus.Location = new System.Drawing.Point(589, 118);
             this.lnkStatus.Name = "lnkStatus";
-            this.lnkStatus.Size = new System.Drawing.Size(106, 22);
+            this.lnkStatus.Size = new System.Drawing.Size(72, 17);
             this.lnkStatus.TabIndex = 196;
             this.lnkStatus.TabStop = true;
             this.lnkStatus.Text = "Learn more";
@@ -346,7 +346,7 @@
             this.btnKebapMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnKebapMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKebapMenu.Font = new System.Drawing.Font("Segoe Fluent Icons", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKebapMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnKebapMenu.ForeColor = System.Drawing.Color.White;
             this.btnKebapMenu.Location = new System.Drawing.Point(960, 3);
             this.btnKebapMenu.Name = "btnKebapMenu";
             this.btnKebapMenu.Size = new System.Drawing.Size(42, 47);
@@ -442,7 +442,7 @@
             this.tvwFeatures.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tvwFeatures.CheckBoxes = true;
             this.tvwFeatures.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tvwFeatures.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tvwFeatures.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.tvwFeatures.FullRowSelect = true;
             this.tvwFeatures.ItemHeight = 37;
             this.tvwFeatures.LineColor = System.Drawing.Color.HotPink;
@@ -460,7 +460,7 @@
             // 
             this.border.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.border.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.border.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.border.FlatAppearance.BorderSize = 2;
             this.border.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.border.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

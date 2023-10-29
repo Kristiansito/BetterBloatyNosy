@@ -1,4 +1,6 @@
-﻿namespace BloatyNosy
+﻿using System.Drawing;
+
+namespace BloatyNosy
 {
     partial class AppsPageView
     {
@@ -29,7 +31,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ToolStripMenuItem menuAppsExport;
+            this.menuAppsExport = new System.Windows.Forms.ToolStripMenuItem();
             this.listRemove = new System.Windows.Forms.ListBox();
             this.rtbStatus = new System.Windows.Forms.RichTextBox();
             this.btnAppOptions = new System.Windows.Forms.Button();
@@ -56,7 +58,6 @@
             this.menuAppsHallOfShame = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuRefresh = new System.Windows.Forms.ToolStripMenuItem();
-            menuAppsExport = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAppsPoster)).BeginInit();
             this.groupInstalled.SuspendLayout();
@@ -66,10 +67,10 @@
             // 
             // menuAppsExport
             // 
-            menuAppsExport.Name = "menuAppsExport";
-            menuAppsExport.Size = new System.Drawing.Size(193, 22);
-            menuAppsExport.Text = "Export bloatware in bin";
-            menuAppsExport.Click += new System.EventHandler(this.menuAppsExport_Click);
+            this.menuAppsExport.Name = "menuAppsExport";
+            this.menuAppsExport.Size = new System.Drawing.Size(193, 22);
+            this.menuAppsExport.Text = "Export bloatware in bin";
+            this.menuAppsExport.Click += new System.EventHandler(this.menuAppsExport_Click);
             // 
             // listRemove
             // 
@@ -111,7 +112,7 @@
             // 
             this.btnAppOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAppOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            this.btnAppOptions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnAppOptions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnAppOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAppOptions.Font = new System.Drawing.Font("Segoe Fluent Icons", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppOptions.ForeColor = System.Drawing.Color.White;
@@ -179,7 +180,7 @@
             // 
             this.btnUninstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUninstall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            this.btnUninstall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnUninstall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.btnUninstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUninstall.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUninstall.ForeColor = System.Drawing.Color.White;
@@ -194,7 +195,7 @@
             // btnBack
             // 
             this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -211,7 +212,7 @@
             this.lblHeader.AutoEllipsis = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(80, 4);
+            this.lblHeader.Location = new System.Drawing.Point(83, 6);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(960, 32);
             this.lblHeader.TabIndex = 177;
@@ -225,7 +226,7 @@
             this.listApps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.listApps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listApps.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listApps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.listApps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.listApps.FormattingEnabled = true;
             this.listApps.ItemHeight = 17;
             this.listApps.Location = new System.Drawing.Point(11, 36);
@@ -316,7 +317,8 @@
             // textSearch
             // 
             this.textSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textSearch.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textSearch.BackColor = System.Drawing.Color.Black;
+            this.textSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSearch.Font = new System.Drawing.Font("Segoe UI Variable Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearch.ForeColor = System.Drawing.Color.Gray;
             this.textSearch.Location = new System.Drawing.Point(469, 29);
@@ -330,10 +332,10 @@
             // btnHMenu
             // 
             this.btnHMenu.FlatAppearance.BorderSize = 0;
-            this.btnHMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.btnHMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnHMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHMenu.Font = new System.Drawing.Font("Segoe Fluent Icons", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHMenu.ForeColor = System.Drawing.Color.Black;
+            this.btnHMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnHMenu.Location = new System.Drawing.Point(35, 0);
             this.btnHMenu.Name = "btnHMenu";
             this.btnHMenu.Size = new System.Drawing.Size(42, 38);
@@ -348,7 +350,7 @@
             this.contextAppMenu.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contextAppMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuAppsImport,
-            menuAppsExport,
+            this.menuAppsExport,
             this.menuAppsRemoveAll});
             this.contextAppMenu.Name = "menuMain";
             this.contextAppMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -371,7 +373,8 @@
             // 
             // contextAppMenuOptions
             // 
-            this.contextAppMenuOptions.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.contextAppMenuOptions.BackColor = Color.FromArgb(25, 25, 25);
+            this.contextAppMenuOptions.ForeColor = System.Drawing.Color.White;
             this.contextAppMenuOptions.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contextAppMenuOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuAppsCommunity,
@@ -413,7 +416,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Controls.Add(this.checkAppsSystem);
             this.Controls.Add(this.btnHMenu);
@@ -467,5 +469,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem menuRefresh;
         private System.Windows.Forms.PictureBox picAppsPoster;
+        private System.Windows.Forms.ToolStripMenuItem menuAppsExport;
     }
 }
