@@ -23,7 +23,6 @@ namespace BloatyNosy
 
             InitializeModsSignature();
 
-
             SetStyle();
         }
 
@@ -78,27 +77,31 @@ namespace BloatyNosy
             foreach (ListViewItem item in lvMods.Items)
             {
                 var feature = item.SubItems[3].Text;
+
                 if (File.Exists(HelperTool.Utils.Data.DataRootDir + feature.Split('/').Last())
                     || File.Exists(HelperTool.Utils.Data.ModsRootDir + feature.Split('/').Last())
                     || File.Exists(AppDomain.CurrentDomain.BaseDirectory + feature.Split('/').Last()))
+                {
                     item.ForeColor = Color.Green;
+                    item.Checked = true; // Set the checkbox as checked
+                }
                 else
                 {
                     item.ForeColor = Color.White;
                 }
             }
-
             lvMods.ItemCheck += lvMods_ItemCheck;
         }
 
+
         private void lvMods_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            // Check if the item's forecolor is green
             if (lvMods.Items[e.Index].ForeColor == Color.Green)
             {
-                e.NewValue = e.CurrentValue; // Cancel the change
+                e.NewValue = e.CurrentValue; // Cancelar el cambio
             }
         }
+
 
         private void btnBack_Click(object sender, EventArgs e)
            => modsForm.SetView(new ModsPageView());
@@ -134,58 +137,62 @@ namespace BloatyNosy
         private async void btnInstall_Click(object sender, EventArgs e)
         {
             bool bNeedRestart = false;
-
-            if (lvMods.CheckedItems.Count == 0)
-            {
-                MessageBox.Show("No feature selected.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
+            bool nonGreenItemSelected = false; // Flag to track if non-green items are selected
 
             StringBuilder builder = new StringBuilder();
 
             foreach (ListViewItem eachItem in lvMods.CheckedItems)
             {
-                List<string> list = new List<string>(eachItem.SubItems[3].Text.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries));
-
-                foreach (string url in list)
+                if (eachItem.ForeColor != Color.Green)
                 {
-                    progress.Visible = true;
-                    using (WebClient client = new WebClient())
-                    {
-                        progress.Value = 0;
-                        client.Credentials = CredentialCache.DefaultNetworkCredentials;
-                        client.DownloadProgressChanged += Wc_DownloadProgressChanged;
-                        Uri uri = new Uri(url);
-                        string filename = System.IO.Path.GetFileName(uri.LocalPath);
-                        string fileExt = System.IO.Path.GetExtension(eachItem.SubItems[3].Text);
+                    nonGreenItemSelected = true; // Set the flag if a non-green item is found
 
-                        try
+                    List<string> list = new List<string>(eachItem.SubItems[3].Text.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries));
+
+                    foreach (string url in list)
+                    {
+                        progress.Visible = true;
+                        using (WebClient client = new WebClient())
                         {
-                            if (fileExt == ".ps1" || fileExt == ".ini")
-                                await client.DownloadFileTaskAsync(uri, HelperTool.Utils.Data.ModsRootDir + filename);
-                            else
+                            progress.Value = 0;
+                            client.Credentials = CredentialCache.DefaultNetworkCredentials;
+                            client.DownloadProgressChanged += Wc_DownloadProgressChanged;
+                            Uri uri = new Uri(url);
+                            string filename = System.IO.Path.GetFileName(uri.LocalPath);
+                            string fileExt = System.IO.Path.GetExtension(eachItem.SubItems[3].Text);
+
+                            try
                             {
-                                HelperTool.Utils.CreateDataDir(); // Create appData folder
-                                await client.DownloadFileTaskAsync(uri, HelperTool.Utils.Data.DataRootDir + filename
-                            );
+                                if (fileExt == ".ps1" || fileExt == ".ini")
+                                    await client.DownloadFileTaskAsync(uri, HelperTool.Utils.Data.ModsRootDir + filename);
+                                else
+                                {
+                                    HelperTool.Utils.CreateDataDir(); // Create appData folder
+                                    await client.DownloadFileTaskAsync(uri, HelperTool.Utils.Data.DataRootDir + filename
+                                );
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, lvMods.FocusedItem.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
                             }
                         }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message, lvMods.FocusedItem.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
+                    }
+                    builder.Append("\n- " + eachItem.SubItems[0].Text);
+
+                    if (eachItem.SubItems[3].Text.Contains(".xml"))
+                    {
+                        builder.Append(" (Restart required.)");
+                        bNeedRestart = true;
                     }
                 }
-                builder.Append("\n- " + eachItem.SubItems[0].Text);
+            }
 
-                // Restart required by filetypes
-                if (eachItem.SubItems[3].Text.Contains(".xml"))
-                // || eachItem.SubItems[3].Text.Contains(".xml"))
-                {
-                    builder.Append(" (Restart required.)");
-                    bNeedRestart = true;
-                }
+            if (!nonGreenItemSelected)
+            {
+                MessageBox.Show("No feature selected.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             MessageBox.Show("Mods successfully installed:\n" + builder.ToString(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);

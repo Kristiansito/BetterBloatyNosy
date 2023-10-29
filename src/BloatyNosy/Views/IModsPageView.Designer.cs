@@ -92,8 +92,8 @@
             this.lvMods.ForeColor = System.Drawing.Color.White;
             this.lvMods.FullRowSelect = true;
             this.lvMods.HideSelection = false;
+            this.lvMods.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lvMods.Location = new System.Drawing.Point(92, 85);
-            this.lvMods.MultiSelect = false;
             this.lvMods.Name = "lvMods";
             this.lvMods.OwnerDraw = true;
             this.lvMods.Size = new System.Drawing.Size(802, 326);
