@@ -86,7 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.lvMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvMods.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lvMods.CheckBoxes = true;
             this.lvMods.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvMods.ForeColor = System.Drawing.Color.White;

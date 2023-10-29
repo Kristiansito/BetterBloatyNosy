@@ -23,6 +23,7 @@ namespace BloatyNosy
 
             InitializeModsSignature();
 
+
             SetStyle();
         }
 
@@ -36,9 +37,9 @@ namespace BloatyNosy
         {
             // Add required columns
             lvMods.Columns.Add("Name");
-            lvMods.Columns.Add("Developer");
             lvMods.Columns.Add("Description");
-            lvMods.Columns.Add("Link");
+            lvMods.Columns.Add("Developer");
+
 
 
             try
@@ -50,8 +51,8 @@ namespace BloatyNosy
                     ListViewItem item = new ListViewItem(new string[]
                     {
                     dm.Element("id").Value,
-                    dm.Element("dev").Value,
                     dm.Element("description").Value,
+                    dm.Element("dev").Value,
                     dm.Element("uri").Value,
                     });
 
@@ -73,6 +74,7 @@ namespace BloatyNosy
 
             lvMods.SelectedIndexChanged += LvMods_SelectedIndexChanged;
         }
+
 
         private void LvMods_SelectedIndexChanged(object sender, EventArgs e)
         {

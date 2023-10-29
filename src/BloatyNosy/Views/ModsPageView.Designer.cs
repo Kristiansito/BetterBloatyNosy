@@ -333,13 +333,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.listMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listMods.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listMods.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listMods.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.listMods.FormattingEnabled = true;
             this.listMods.Location = new System.Drawing.Point(92, 140);
             this.listMods.Name = "listMods";
-            this.listMods.Size = new System.Drawing.Size(857, 342);
+            this.listMods.Size = new System.Drawing.Size(857, 308);
             this.listMods.TabIndex = 195;
             this.listMods.SelectedIndexChanged += new System.EventHandler(this.listMods_SelectedIndexChanged);
             // 
