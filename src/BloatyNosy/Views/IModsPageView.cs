@@ -7,6 +7,7 @@ using System.Net;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BloatyNosy
 {
@@ -27,7 +28,7 @@ namespace BloatyNosy
 
         private void SetStyle()
         {
-            lvMods.BackColor =   Color.FromArgb(239, 239, 247);
+            lvMods.BackColor =   Color.FromArgb(25, 25, 25);
             btnBack.Text = "\uE72B";
         }
 
@@ -35,9 +36,10 @@ namespace BloatyNosy
         {
             // Add required columns
             lvMods.Columns.Add("Name");
-            lvMods.Columns.Add("Description");
             lvMods.Columns.Add("Developer");
+            lvMods.Columns.Add("Description");
             lvMods.Columns.Add("Link");
+
 
             try
             {
@@ -48,8 +50,8 @@ namespace BloatyNosy
                     ListViewItem item = new ListViewItem(new string[]
                     {
                     dm.Element("id").Value,
-                    dm.Element("description").Value,
                     dm.Element("dev").Value,
+                    dm.Element("description").Value,
                     dm.Element("uri").Value,
                     });
 
@@ -68,6 +70,20 @@ namespace BloatyNosy
                 lvMods.Visible = false;
                 lnkNoModsSig.Visible = true;
             }
+
+            lvMods.SelectedIndexChanged += LvMods_SelectedIndexChanged;
+        }
+
+        private void LvMods_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvMods.SelectedItems.Count > 0)
+            {
+                // Obtener la descripción según la columna "Name" o "id"
+                string description = lvMods.SelectedItems[0].SubItems[2].Text; // Índice 2 para la columna "Description"
+
+                // Mostrar la descripción en una ventana emergente (MessageBox)
+                MessageBox.Show(description, "Description");
+            }
         }
 
         public void isFeatureInstalled()
@@ -78,10 +94,10 @@ namespace BloatyNosy
                 if (File.Exists(HelperTool.Utils.Data.DataRootDir + feature.Split('/').Last())
                     || File.Exists(HelperTool.Utils.Data.ModsRootDir + feature.Split('/').Last())
                     || File.Exists(AppDomain.CurrentDomain.BaseDirectory + feature.Split('/').Last()))
-                    item.ForeColor = Color.Gray;
+                    item.ForeColor = Color.Green;
                 else
                 {
-                    item.ForeColor = Color.Black;
+                    item.ForeColor = Color.White;
                 }
             }
         }
@@ -196,14 +212,30 @@ namespace BloatyNosy
 
         private void listView_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e)
         {
-            e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(245, 241, 249)), e.Bounds);
-            e.DrawText();
+            //e.Graphics.FillRectangle(new SolidBrush(Color.FromArgb(50, 50, 50)), e.Bounds);
+
+            using (Font headerFont = new Font(this.lvMods.Font, FontStyle.Bold))
+            {
+                TextFormatFlags flags = TextFormatFlags.VerticalCenter | TextFormatFlags.Left;
+                TextRenderer.DrawText(e.Graphics, e.Header.Text, headerFont, e.Bounds, Color.White, flags);
+            }
         }
+
 
         private void listView_DrawItem(object sender, DrawListViewItemEventArgs e)
            => e.DrawDefault = true;
 
         private void lnkGetModsOnline_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
              => HelperTool.Utils.LaunchUri("https://www.builtbybel.com/blog/about-debloos");
+
+        private void IModsPageView_Load(object sender, EventArgs e)
+        {
+            lvMods.ColumnWidthChanging += myListView_ColumnWidthChanging;
+        }
+        private void myListView_ColumnWidthChanging(object sender, ColumnWidthChangingEventArgs e)
+        {
+            e.Cancel = true; // Esto evita que el usuario cambie el tamaño de la columna en tiempo real.
+            e.NewWidth = lvMods.Columns[e.ColumnIndex].Width; // Restablece el ancho de la columna.
+        }
     }
 }

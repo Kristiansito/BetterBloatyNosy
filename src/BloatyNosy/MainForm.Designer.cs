@@ -94,6 +94,7 @@
             // 
             this.pnlMain.AutoScroll = true;
             this.pnlMain.AutoSize = true;
+            this.pnlMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.pnlMain.Controls.Add(this.btnBack);
             this.pnlMain.Controls.Add(this.lnkUpdateCheck);
@@ -310,7 +311,6 @@
             this.btnAppOptions.AutoEllipsis = true;
             this.btnAppOptions.BackColor = System.Drawing.Color.Transparent;
             this.btnAppOptions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAppOptions.FlatAppearance.BorderSize = 0;
             this.btnAppOptions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAppOptions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAppOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -362,7 +362,6 @@
             this.btnAnalyze.AutoEllipsis = true;
             this.btnAnalyze.BackColor = System.Drawing.Color.Transparent;
             this.btnAnalyze.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAnalyze.FlatAppearance.BorderSize = 0;
             this.btnAnalyze.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAnalyze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAnalyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -391,11 +390,11 @@
             this.lblTools.AutoSize = true;
             this.lblTools.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTools.ForeColor = System.Drawing.Color.White;
-            this.lblTools.Location = new System.Drawing.Point(33, 627);
+            this.lblTools.Location = new System.Drawing.Point(23, 627);
             this.lblTools.Name = "lblTools";
-            this.lblTools.Size = new System.Drawing.Size(97, 15);
+            this.lblTools.Size = new System.Drawing.Size(64, 15);
             this.lblTools.TabIndex = 25;
-            this.lblTools.Text = "Más herramientas";
+            this.lblTools.Text = "More Tools";
             // 
             // cmbTools
             // 
@@ -408,7 +407,7 @@
             this.cmbTools.FormattingEnabled = true;
             this.cmbTools.IntegralHeight = false;
             this.cmbTools.ItemHeight = 21;
-            this.cmbTools.Location = new System.Drawing.Point(136, 619);
+            this.cmbTools.Location = new System.Drawing.Point(102, 619);
             this.cmbTools.Name = "cmbTools";
             this.cmbTools.Size = new System.Drawing.Size(150, 29);
             this.cmbTools.TabIndex = 19;
@@ -745,7 +744,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuRestore;
         private System.Windows.Forms.ToolStripTextBox menuRestoreInfo;
         private System.Windows.Forms.ToolStripMenuItem menuLoadProfile;
-        private System.Windows.Forms.LinkLabel lnkRunSetup;
         private System.Windows.Forms.ToolStripMenuItem menuExportProfile;
         private System.Windows.Forms.ContextMenuStrip contextAppMenuOptions;
         private System.Windows.Forms.ToolStripMenuItem menuAppConfigure;
@@ -769,6 +767,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button border;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel lnkRunSetup;
     }
 }
 

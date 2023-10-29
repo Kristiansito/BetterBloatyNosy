@@ -150,21 +150,21 @@ namespace BloatyNosy
             }
 
             if (installed == 0)
-                btnMoveAll.Enabled =
-                btnMove.Enabled =
+                btnMoveAll.Visible =
+                btnMove.Visible =
                 false;
             else
-                btnMoveAll.Enabled =
-                btnMove.Enabled =
+                btnMoveAll.Visible =
+                btnMove.Visible =
                 true;
 
             if (remove == 0)
-                btnRestoreAll.Enabled =
-                btnRestore.Enabled =
+                btnRestoreAll.Visible =
+                btnRestore.Visible =
                 false;
             else
-                btnRestoreAll.Enabled =
-                btnRestore.Enabled =
+                btnRestoreAll.Visible =
+                btnRestore.Visible =
                 true;
         }
 

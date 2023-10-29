@@ -44,7 +44,7 @@
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnBack.Location = new System.Drawing.Point(0, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(42, 38);
@@ -89,9 +89,11 @@
             this.lvMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvMods.CheckBoxes = true;
             this.lvMods.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvMods.ForeColor = System.Drawing.Color.White;
             this.lvMods.FullRowSelect = true;
             this.lvMods.HideSelection = false;
             this.lvMods.Location = new System.Drawing.Point(92, 85);
+            this.lvMods.MultiSelect = false;
             this.lvMods.Name = "lvMods";
             this.lvMods.OwnerDraw = true;
             this.lvMods.Size = new System.Drawing.Size(802, 326);
@@ -173,6 +175,7 @@
             this.Controls.Add(this.btnBack);
             this.Name = "IModsPageView";
             this.Size = new System.Drawing.Size(972, 556);
+            this.Load += new System.EventHandler(this.IModsPageView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

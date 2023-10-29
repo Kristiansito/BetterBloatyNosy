@@ -31,7 +31,8 @@ namespace BloatyNosy
         private void SetStyle()
         {
             BackColor =
-                Color.FromArgb(239, 239, 247);
+                Color.FromArgb(25, 25, 25);
+                Color.FromArgb(25, 25, 25);
             btnBack.Text = "\uE72B";
 
             btnAssist.FlatAppearance.MouseOverBackColor = btnAssist.BackColor;
@@ -97,7 +98,7 @@ namespace BloatyNosy
 
         public void NavigationView()
         {
-            btnPrev.Enabled = INavPage > PageTitle.Setup;
+            btnPrev.Visible = INavPage > PageTitle.Setup;
             btnHome.Visible = INavPage > PageTitle.Setup;
 
             switch (INavPage)

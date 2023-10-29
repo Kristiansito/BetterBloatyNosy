@@ -37,7 +37,7 @@ namespace BloatyNosy
             listRemote.BackColor =
             listLocal.BackColor =
             richStatus.BackColor =
-                Color.FromArgb(239, 239, 247);
+                Color.FromArgb(25, 25, 25);
             btnBack.Text = "\uE72B";
         }
 
@@ -170,12 +170,26 @@ namespace BloatyNosy
             {
                 richStatus.Visible = true;
                 listLocal.Visible = false;
+                btnRemoveAll.Visible =
+                btnRemove.Visible =
+                false;
             }
             else
             {
                 listLocal.Visible = true;
                 richStatus.Visible = false;
+                btnRemoveAll.Visible =
+                btnRemove.Visible =
+                true;
             }
+            if (listRemote.Items.Count == 0)
+                btnAddAll.Visible =
+                btnAdd.Visible =
+                false;
+            else
+                btnAddAll.Visible =
+                btnAdd.Visible =
+                true;
         }
 
         private async void btnInstall_Click(object sender, EventArgs e)

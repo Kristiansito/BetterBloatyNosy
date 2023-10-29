@@ -48,6 +48,8 @@ namespace BloatyNosy
             this.picAppsPoster = new System.Windows.Forms.PictureBox();
             this.lblAppsBinOptions = new System.Windows.Forms.LinkLabel();
             this.groupInstalled = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.textSearch = new System.Windows.Forms.TextBox();
             this.btnHMenu = new System.Windows.Forms.Button();
             this.contextAppMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -127,9 +129,13 @@ namespace BloatyNosy
             // btnRestoreAll
             // 
             this.btnRestoreAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestoreAll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRestoreAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnRestoreAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRestoreAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestoreAll.Font = new System.Drawing.Font("Segoe UI Variable Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestoreAll.ForeColor = System.Drawing.Color.Black;
-            this.btnRestoreAll.Location = new System.Drawing.Point(482, 313);
+            this.btnRestoreAll.ForeColor = System.Drawing.Color.White;
+            this.btnRestoreAll.Location = new System.Drawing.Point(482, 332);
             this.btnRestoreAll.Name = "btnRestoreAll";
             this.btnRestoreAll.Size = new System.Drawing.Size(89, 23);
             this.btnRestoreAll.TabIndex = 34;
@@ -140,9 +146,13 @@ namespace BloatyNosy
             // btnRestore
             // 
             this.btnRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestore.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRestore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnRestore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRestore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestore.Font = new System.Drawing.Font("Segoe UI Variable Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestore.ForeColor = System.Drawing.Color.Black;
-            this.btnRestore.Location = new System.Drawing.Point(482, 342);
+            this.btnRestore.ForeColor = System.Drawing.Color.White;
+            this.btnRestore.Location = new System.Drawing.Point(482, 361);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(89, 23);
             this.btnRestore.TabIndex = 32;
@@ -153,9 +163,13 @@ namespace BloatyNosy
             // btnMoveAll
             // 
             this.btnMoveAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMoveAll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMoveAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnMoveAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMoveAll.Font = new System.Drawing.Font("Segoe UI Variable Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoveAll.ForeColor = System.Drawing.Color.Black;
-            this.btnMoveAll.Location = new System.Drawing.Point(482, 201);
+            this.btnMoveAll.ForeColor = System.Drawing.Color.White;
+            this.btnMoveAll.Location = new System.Drawing.Point(482, 220);
             this.btnMoveAll.Name = "btnMoveAll";
             this.btnMoveAll.Size = new System.Drawing.Size(89, 23);
             this.btnMoveAll.TabIndex = 35;
@@ -166,9 +180,13 @@ namespace BloatyNosy
             // btnMove
             // 
             this.btnMove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMove.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnMove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMove.Font = new System.Drawing.Font("Segoe UI Variable Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMove.ForeColor = System.Drawing.Color.Black;
-            this.btnMove.Location = new System.Drawing.Point(482, 230);
+            this.btnMove.ForeColor = System.Drawing.Color.White;
+            this.btnMove.Location = new System.Drawing.Point(482, 249);
             this.btnMove.Name = "btnMove";
             this.btnMove.Size = new System.Drawing.Size(89, 23);
             this.btnMove.TabIndex = 31;
@@ -198,7 +216,7 @@ namespace BloatyNosy
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe Fluent Icons", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnBack.Location = new System.Drawing.Point(0, 0);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(42, 38);
@@ -214,7 +232,7 @@ namespace BloatyNosy
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(83, 6);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(960, 32);
+            this.lblHeader.Size = new System.Drawing.Size(527, 32);
             this.lblHeader.TabIndex = 177;
             this.lblHeader.Text = "BloatPilot";
             // 
@@ -229,10 +247,10 @@ namespace BloatyNosy
             this.listApps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.listApps.FormattingEnabled = true;
             this.listApps.ItemHeight = 17;
-            this.listApps.Location = new System.Drawing.Point(11, 36);
+            this.listApps.Location = new System.Drawing.Point(7, 70);
             this.listApps.Name = "listApps";
             this.listApps.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.listApps.Size = new System.Drawing.Size(394, 595);
+            this.listApps.Size = new System.Drawing.Size(398, 561);
             this.listApps.Sorted = true;
             this.listApps.TabIndex = 13;
             // 
@@ -275,9 +293,9 @@ namespace BloatyNosy
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picAppsPoster.ErrorImage = null;
             this.picAppsPoster.InitialImage = null;
-            this.picAppsPoster.Location = new System.Drawing.Point(38, 105);
+            this.picAppsPoster.Location = new System.Drawing.Point(6, 66);
             this.picAppsPoster.Name = "picAppsPoster";
-            this.picAppsPoster.Size = new System.Drawing.Size(331, 454);
+            this.picAppsPoster.Size = new System.Drawing.Size(399, 570);
             this.picAppsPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAppsPoster.TabIndex = 161;
             this.picAppsPoster.TabStop = false;
@@ -285,12 +303,12 @@ namespace BloatyNosy
             // 
             // lblAppsBinOptions
             // 
-            this.lblAppsBinOptions.ActiveLinkColor = System.Drawing.Color.MediumVioletRed;
+            this.lblAppsBinOptions.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lblAppsBinOptions.AutoEllipsis = true;
             this.lblAppsBinOptions.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppsBinOptions.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lblAppsBinOptions.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.lblAppsBinOptions.Location = new System.Drawing.Point(8, 36);
+            this.lblAppsBinOptions.Location = new System.Drawing.Point(18, 37);
             this.lblAppsBinOptions.Name = "lblAppsBinOptions";
             this.lblAppsBinOptions.Size = new System.Drawing.Size(361, 16);
             this.lblAppsBinOptions.TabIndex = 159;
@@ -304,6 +322,8 @@ namespace BloatyNosy
             this.groupInstalled.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupInstalled.Controls.Add(this.label2);
+            this.groupInstalled.Controls.Add(this.label1);
             this.groupInstalled.Controls.Add(this.listApps);
             this.groupInstalled.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupInstalled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
@@ -314,18 +334,39 @@ namespace BloatyNosy
             this.groupInstalled.TabStop = false;
             this.groupInstalled.Text = "Installed apps";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.label2.Location = new System.Drawing.Point(16, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(233, 17);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Move the apps you want to keep here.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.label1.Location = new System.Drawing.Point(16, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(233, 17);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Move the apps you want to keep here.";
+            // 
             // textSearch
             // 
-            this.textSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textSearch.BackColor = System.Drawing.Color.Black;
             this.textSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSearch.Font = new System.Drawing.Font("Segoe UI Variable Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearch.ForeColor = System.Drawing.Color.Gray;
-            this.textSearch.Location = new System.Drawing.Point(469, 29);
+            this.textSearch.Location = new System.Drawing.Point(186, 9);
             this.textSearch.Name = "textSearch";
-            this.textSearch.Size = new System.Drawing.Size(122, 23);
+            this.textSearch.Size = new System.Drawing.Size(158, 23);
             this.textSearch.TabIndex = 181;
-            this.textSearch.Text = "Search...";
+            this.textSearch.Text = "Search app...";
             this.textSearch.Click += new System.EventHandler(this.textSearch_Click);
             this.textSearch.TextChanged += new System.EventHandler(this.textSearch_TextChanged);
             // 
@@ -335,7 +376,7 @@ namespace BloatyNosy
             this.btnHMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
             this.btnHMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHMenu.Font = new System.Drawing.Font("Segoe Fluent Icons", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnHMenu.Location = new System.Drawing.Point(35, 0);
             this.btnHMenu.Name = "btnHMenu";
             this.btnHMenu.Size = new System.Drawing.Size(42, 38);
@@ -346,8 +387,9 @@ namespace BloatyNosy
             // 
             // contextAppMenu
             // 
-            this.contextAppMenu.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.contextAppMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.contextAppMenu.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextAppMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.contextAppMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuAppsImport,
             this.menuAppsExport,
@@ -373,9 +415,9 @@ namespace BloatyNosy
             // 
             // contextAppMenuOptions
             // 
-            this.contextAppMenuOptions.BackColor = Color.FromArgb(25, 25, 25);
-            this.contextAppMenuOptions.ForeColor = System.Drawing.Color.White;
+            this.contextAppMenuOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.contextAppMenuOptions.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextAppMenuOptions.ForeColor = System.Drawing.Color.White;
             this.contextAppMenuOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuAppsCommunity,
             this.menuAppsHallOfShame,
@@ -435,6 +477,7 @@ namespace BloatyNosy
             this.groupBin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picAppsPoster)).EndInit();
             this.groupInstalled.ResumeLayout(false);
+            this.groupInstalled.PerformLayout();
             this.contextAppMenu.ResumeLayout(false);
             this.contextAppMenuOptions.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -470,5 +513,7 @@ namespace BloatyNosy
         private System.Windows.Forms.ToolStripMenuItem menuRefresh;
         private System.Windows.Forms.PictureBox picAppsPoster;
         private System.Windows.Forms.ToolStripMenuItem menuAppsExport;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
