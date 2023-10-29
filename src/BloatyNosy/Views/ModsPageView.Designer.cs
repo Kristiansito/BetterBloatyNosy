@@ -261,10 +261,11 @@
             // 
             // textSearch
             // 
-            this.textSearch.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textSearch.BackColor = System.Drawing.Color.Black;
+            this.textSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSearch.Font = new System.Drawing.Font("Segoe UI Variable Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textSearch.ForeColor = System.Drawing.Color.Gray;
-            this.textSearch.Location = new System.Drawing.Point(485, 60);
+            this.textSearch.Location = new System.Drawing.Point(210, 105);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(122, 23);
             this.textSearch.TabIndex = 199;
@@ -339,7 +340,7 @@
             this.listMods.FormattingEnabled = true;
             this.listMods.Location = new System.Drawing.Point(92, 140);
             this.listMods.Name = "listMods";
-            this.listMods.Size = new System.Drawing.Size(857, 308);
+            this.listMods.Size = new System.Drawing.Size(857, 380);
             this.listMods.TabIndex = 195;
             this.listMods.SelectedIndexChanged += new System.EventHandler(this.listMods_SelectedIndexChanged);
             // 
