@@ -566,7 +566,7 @@ namespace BloatyNosy
         private void btnBack_Click(object sender, EventArgs e)
         {
             if (rtbLog.Text == "")
-                rtbLog.Text = "Windows 11 es demasiado pesado y muy intrusivo, con muchas caracteristicas molestas que no deberian estar ahí." +
+                rtbLog.Text = "Windows 11 es demasiado pesado e intrusivo, con muchas caracteristicas molestas que no deberian estar ahí. " +
                        "Esta aplicación escaneará tu sistema y le informará qué características le gustan o no le gustan de tu configuración.\n\n" +
                        "Haz clic en \"Analizar\" para escanear Windows 11 en busca de elementos que debe eliminar.\n\n" +
                        "Si tienes alguna pregunta o necesitas ayuda, visita el repositorio de código abierto en " + HelperTool.Utils.Uri.URL_GITREPO;

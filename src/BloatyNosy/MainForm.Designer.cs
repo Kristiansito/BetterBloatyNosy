@@ -308,10 +308,14 @@
             // 
             this.btnAppOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAppOptions.AutoEllipsis = true;
-            this.btnAppOptions.BackColor = System.Drawing.Color.White;
+            this.btnAppOptions.BackColor = System.Drawing.Color.Transparent;
+            this.btnAppOptions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAppOptions.FlatAppearance.BorderSize = 0;
+            this.btnAppOptions.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnAppOptions.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAppOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAppOptions.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAppOptions.ForeColor = System.Drawing.Color.Black;
+            this.btnAppOptions.ForeColor = System.Drawing.Color.White;
             this.btnAppOptions.Location = new System.Drawing.Point(726, 595);
             this.btnAppOptions.Name = "btnAppOptions";
             this.btnAppOptions.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
@@ -356,13 +360,14 @@
             // 
             this.btnAnalyze.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnalyze.AutoEllipsis = true;
-            this.btnAnalyze.BackColor = System.Drawing.Color.White;
-            this.btnAnalyze.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnAnalyze.BackColor = System.Drawing.Color.Transparent;
+            this.btnAnalyze.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAnalyze.FlatAppearance.BorderSize = 0;
             this.btnAnalyze.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
-            this.btnAnalyze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
+            this.btnAnalyze.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAnalyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnalyze.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalyze.ForeColor = System.Drawing.Color.Black;
+            this.btnAnalyze.ForeColor = System.Drawing.Color.White;
             this.btnAnalyze.Location = new System.Drawing.Point(852, 595);
             this.btnAnalyze.Name = "btnAnalyze";
             this.btnAnalyze.Size = new System.Drawing.Size(120, 35);
