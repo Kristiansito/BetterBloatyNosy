@@ -71,21 +71,6 @@ namespace BloatyNosy
                 lvMods.Visible = false;
                 lnkNoModsSig.Visible = true;
             }
-
-            lvMods.SelectedIndexChanged += LvMods_SelectedIndexChanged;
-        }
-
-
-        private void LvMods_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lvMods.SelectedItems.Count > 0)
-            {
-                // Obtener la descripción según la columna "Name" o "id"
-                string description = lvMods.SelectedItems[0].SubItems[2].Text; // Índice 2 para la columna "Description"
-
-                // Mostrar la descripción en una ventana emergente (MessageBox)
-                MessageBox.Show(description, "Description");
-            }
         }
 
         public void isFeatureInstalled()
@@ -101,6 +86,17 @@ namespace BloatyNosy
                 {
                     item.ForeColor = Color.White;
                 }
+            }
+
+            lvMods.ItemCheck += lvMods_ItemCheck;
+        }
+
+        private void lvMods_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            // Check if the item's forecolor is green
+            if (lvMods.Items[e.Index].ForeColor == Color.Green)
+            {
+                e.NewValue = e.CurrentValue; // Cancel the change
             }
         }
 
