@@ -154,10 +154,10 @@
             this.lnkUpdateCheck.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkUpdateCheck.Location = new System.Drawing.Point(266, 541);
             this.lnkUpdateCheck.Name = "lnkUpdateCheck";
-            this.lnkUpdateCheck.Size = new System.Drawing.Size(134, 15);
+            this.lnkUpdateCheck.Size = new System.Drawing.Size(92, 15);
             this.lnkUpdateCheck.TabIndex = 203;
             this.lnkUpdateCheck.TabStop = true;
-            this.lnkUpdateCheck.Text = "Comprobar actualizaciones";
+            this.lnkUpdateCheck.Text = "Check for updates";
             this.lnkUpdateCheck.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkUpdateCheck.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUpdateCheck_LinkClicked);
             // 
@@ -174,7 +174,7 @@
             this._lblAssembly.Name = "_lblAssembly";
             this._lblAssembly.Size = new System.Drawing.Size(42, 15);
             this._lblAssembly.TabIndex = 202;
-            this._lblAssembly.Text = "Versión";
+            this._lblAssembly.Text = "Version";
             // 
             // lnkAppMediaHelp
             // 
@@ -189,10 +189,10 @@
             this.lnkAppMediaHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaHelp.Location = new System.Drawing.Point(24, 587);
             this.lnkAppMediaHelp.Name = "lnkAppMediaHelp";
-            this.lnkAppMediaHelp.Size = new System.Drawing.Size(37, 15);
+            this.lnkAppMediaHelp.Size = new System.Drawing.Size(46, 15);
             this.lnkAppMediaHelp.TabIndex = 201;
             this.lnkAppMediaHelp.TabStop = true;
-            this.lnkAppMediaHelp.Text = "Ayuda";
+            this.lnkAppMediaHelp.Text = "Get help";
             this.lnkAppMediaHelp.VisitedLinkColor = System.Drawing.Color.White;
             this.lnkAppMediaHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaHelp_LinkClicked);
             // 
@@ -209,10 +209,10 @@
             this.lnkAppMediaDonate.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaDonate.Location = new System.Drawing.Point(24, 572);
             this.lnkAppMediaDonate.Name = "lnkAppMediaDonate";
-            this.lnkAppMediaDonate.Size = new System.Drawing.Size(37, 15);
+            this.lnkAppMediaDonate.Size = new System.Drawing.Size(42, 15);
             this.lnkAppMediaDonate.TabIndex = 200;
             this.lnkAppMediaDonate.TabStop = true;
-            this.lnkAppMediaDonate.Text = "Donar";
+            this.lnkAppMediaDonate.Text = "Donate";
             this.lnkAppMediaDonate.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkAppMediaDonate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaDonate_LinkClicked);
             // 
@@ -229,10 +229,10 @@
             this.lnkAppMediaGitHub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaGitHub.Location = new System.Drawing.Point(23, 541);
             this.lnkAppMediaGitHub.Name = "lnkAppMediaGitHub";
-            this.lnkAppMediaGitHub.Size = new System.Drawing.Size(99, 15);
+            this.lnkAppMediaGitHub.Size = new System.Drawing.Size(86, 15);
             this.lnkAppMediaGitHub.TabIndex = 198;
             this.lnkAppMediaGitHub.TabStop = true;
-            this.lnkAppMediaGitHub.Text = "Síguenos en GitHub";
+            this.lnkAppMediaGitHub.Text = "Follow on GitHub";
             this.lnkAppMediaGitHub.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkAppMediaGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaGitHub_LinkClicked);
             // 
@@ -249,10 +249,10 @@
             this.lnkAppMediaTwitter.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkAppMediaTwitter.Location = new System.Drawing.Point(23, 557);
             this.lnkAppMediaTwitter.Name = "lnkAppMediaTwitter";
-            this.lnkAppMediaTwitter.Size = new System.Drawing.Size(98, 15);
+            this.lnkAppMediaTwitter.Size = new System.Drawing.Size(105, 15);
             this.lnkAppMediaTwitter.TabIndex = 199;
             this.lnkAppMediaTwitter.TabStop = true;
-            this.lnkAppMediaTwitter.Text = "Síguenos en Twitter";
+            this.lnkAppMediaTwitter.Text = "Follow dev on Twitter";
             this.lnkAppMediaTwitter.VisitedLinkColor = System.Drawing.Color.MediumVioletRed;
             this.lnkAppMediaTwitter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAppMediaTwitter_LinkClicked);
             // 
@@ -265,9 +265,9 @@
             this._lblAboutInfo.ForeColor = System.Drawing.Color.White;
             this._lblAboutInfo.Location = new System.Drawing.Point(23, 520);
             this._lblAboutInfo.Name = "_lblAboutInfo";
-            this._lblAboutInfo.Size = new System.Drawing.Size(144, 17);
+            this._lblAboutInfo.Size = new System.Drawing.Size(101, 17);
             this._lblAboutInfo.TabIndex = 197;
-            this._lblAboutInfo.Text = "Acerca de la aplicación";
+            this._lblAboutInfo.Text = "About this App";
             // 
             // lnkStatus
             // 
@@ -284,7 +284,7 @@
             this.lnkStatus.Size = new System.Drawing.Size(106, 22);
             this.lnkStatus.TabIndex = 196;
             this.lnkStatus.TabStop = true;
-            this.lnkStatus.Text = "Más información";
+            this.lnkStatus.Text = "Learn more";
             this.lnkStatus.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkStatus_LinkClicked);
             // 
             // lnkRunSetup
@@ -298,10 +298,10 @@
             this.lnkRunSetup.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.lnkRunSetup.Location = new System.Drawing.Point(621, 604);
             this.lnkRunSetup.Name = "lnkRunSetup";
-            this.lnkRunSetup.Size = new System.Drawing.Size(99, 17);
+            this.lnkRunSetup.Size = new System.Drawing.Size(85, 17);
             this.lnkRunSetup.TabIndex = 179;
             this.lnkRunSetup.TabStop = true;
-            this.lnkRunSetup.Text = "Asistente virtual";
+            this.lnkRunSetup.Text = "Use Assistant";
             this.lnkRunSetup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRunSetup_LinkClicked);
             // 
             // btnAppOptions
@@ -321,7 +321,7 @@
             this.btnAppOptions.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btnAppOptions.Size = new System.Drawing.Size(120, 35);
             this.btnAppOptions.TabIndex = 178;
-            this.btnAppOptions.Text = "Aplicar";
+            this.btnAppOptions.Text = "Fix";
             this.btnAppOptions.UseVisualStyleBackColor = false;
             this.btnAppOptions.Click += new System.EventHandler(this.btnAppOptions_Click);
             // 
@@ -334,9 +334,9 @@
             this.lblHeader.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lblHeader.Location = new System.Drawing.Point(472, 36);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(424, 33);
+            this.lblHeader.Size = new System.Drawing.Size(378, 33);
             this.lblHeader.TabIndex = 176;
-            this.lblHeader.Text = "Vamos a personalizar tu experiencia";
+            this.lblHeader.Text = "Let\'s customize your experience";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnKebapMenu
@@ -372,7 +372,7 @@
             this.btnAnalyze.Name = "btnAnalyze";
             this.btnAnalyze.Size = new System.Drawing.Size(120, 35);
             this.btnAnalyze.TabIndex = 27;
-            this.btnAnalyze.Text = "Analizar";
+            this.btnAnalyze.Text = "Analyze";
             this.btnAnalyze.UseVisualStyleBackColor = false;
             this.btnAnalyze.Click += new System.EventHandler(this.btnAnalyze_Click);
             // 
@@ -484,8 +484,8 @@
             this.lblInetCheck.Name = "lblInetCheck";
             this.lblInetCheck.Size = new System.Drawing.Size(357, 42);
             this.lblInetCheck.TabIndex = 195;
-            this.lblInetCheck.Text = "No hay conexión a Internet.\r\nAlgunas funciones de BetterBloatyNosy no estarán dis" +
-    "ponibles.\r\n\r\n";
+            this.lblInetCheck.Text = "We cannot connect to the Internet. \r\nSome functions of BloatyNosy are not availab" +
+    "le.\r\n\r\n";
             this.lblInetCheck.Visible = false;
             // 
             // pbBackground
@@ -512,11 +512,11 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.label1.Location = new System.Drawing.Point(475, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 51);
+            this.label1.Size = new System.Drawing.Size(480, 51);
             this.label1.TabIndex = 221;
-            this.label1.Text = "Seleccione todas las funciones que no planee utilizar en su dispositivo para cons" +
-    "eguir\r\nun entorno más ajustado a sus necesidades. Siempre puede revertir estos c" +
-    "ambios a\r\nsu estado original.\r\n";
+            this.label1.Text = "Select all the ways you don\'t plan to use your device to get personalized tip, ad" +
+    "s,\r\nrecommendation within Microsoft expericences. You can always revert these\r\nS" +
+    "ettings to default.";
             // 
             // contextKebapMenu
             // 

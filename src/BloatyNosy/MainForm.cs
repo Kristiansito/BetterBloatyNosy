@@ -566,10 +566,10 @@ namespace BloatyNosy
         private void btnBack_Click(object sender, EventArgs e)
         {
             if (rtbLog.Text == "")
-                rtbLog.Text = "Windows 11 es demasiado pesado e intrusivo, con muchas caracteristicas molestas que no deberian estar ahí. " +
-                       "Esta aplicación escaneará tu sistema y le informará qué características le gustan o no le gustan de tu configuración.\n\n" +
-                       "Haz clic en \"Analizar\" para escanear Windows 11 en busca de elementos que debe eliminar.\n\n" +
-                       "Si tienes alguna pregunta o necesitas ayuda, visita el repositorio de código abierto en " + HelperTool.Utils.Uri.URL_GITREPO;
+                rtbLog.Text = "Windows 11 is too bloaty & nosy and has some annoying features that just need to go. " +
+                       "This app will scan your system and inform you which features it likes or dislikes in your configuration.\n\n" +
+                       "Click on \"Analyze\" to scan your Windows 11 system for undesired configurations and features and make adjustments in one go.\n\n" +
+                       "If you have any questions or need assistance, please visit the open-source repository of the app at ." + HelperTool.Utils.Uri.URL_GITREPO;
 
             if (switchMode)
             {

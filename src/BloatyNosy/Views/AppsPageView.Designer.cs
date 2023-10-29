@@ -75,9 +75,10 @@
             // 
             this.listRemove.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listRemove.BackColor = System.Drawing.Color.White;
+            this.listRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.listRemove.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listRemove.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.listRemove.FormattingEnabled = true;
             this.listRemove.ItemHeight = 17;
             this.listRemove.Location = new System.Drawing.Point(11, 36);
@@ -92,7 +93,7 @@
             this.rtbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbStatus.BackColor = System.Drawing.Color.White;
+            this.rtbStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.rtbStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbStatus.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbStatus.ForeColor = System.Drawing.Color.Black;
@@ -109,8 +110,8 @@
             // btnAppOptions
             // 
             this.btnAppOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAppOptions.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.btnAppOptions.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.btnAppOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.btnAppOptions.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnAppOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAppOptions.Font = new System.Drawing.Font("Segoe Fluent Icons", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppOptions.ForeColor = System.Drawing.Color.White;
@@ -177,8 +178,8 @@
             // btnUninstall
             // 
             this.btnUninstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUninstall.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.btnUninstall.FlatAppearance.BorderColor = System.Drawing.Color.Orchid;
+            this.btnUninstall.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.btnUninstall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.btnUninstall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUninstall.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUninstall.ForeColor = System.Drawing.Color.White;
@@ -209,7 +210,7 @@
             // 
             this.lblHeader.AutoEllipsis = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(80, 4);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(960, 32);
@@ -221,9 +222,10 @@
             this.listApps.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listApps.BackColor = System.Drawing.Color.White;
+            this.listApps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.listApps.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listApps.Font = new System.Drawing.Font("Segoe UI Variable Text Semiligh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listApps.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.listApps.FormattingEnabled = true;
             this.listApps.ItemHeight = 17;
             this.listApps.Location = new System.Drawing.Point(11, 36);
@@ -239,7 +241,7 @@
             this.checkAppsSystem.AutoSize = true;
             this.checkAppsSystem.FlatAppearance.BorderSize = 0;
             this.checkAppsSystem.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkAppsSystem.ForeColor = System.Drawing.Color.DeepPink;
+            this.checkAppsSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.checkAppsSystem.Location = new System.Drawing.Point(35, 744);
             this.checkAppsSystem.Name = "checkAppsSystem";
             this.checkAppsSystem.Size = new System.Drawing.Size(135, 21);
@@ -257,7 +259,7 @@
             this.groupBin.Controls.Add(this.lblAppsBinOptions);
             this.groupBin.Controls.Add(this.listRemove);
             this.groupBin.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBin.ForeColor = System.Drawing.Color.DeepPink;
+            this.groupBin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.groupBin.Location = new System.Drawing.Point(609, 82);
             this.groupBin.Name = "groupBin";
             this.groupBin.Size = new System.Drawing.Size(411, 648);
@@ -286,7 +288,7 @@
             this.lblAppsBinOptions.AutoEllipsis = true;
             this.lblAppsBinOptions.Font = new System.Drawing.Font("Segoe UI Variable Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppsBinOptions.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lblAppsBinOptions.LinkColor = System.Drawing.Color.Gray;
+            this.lblAppsBinOptions.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(126)))), ((int)(((byte)(126)))));
             this.lblAppsBinOptions.Location = new System.Drawing.Point(8, 36);
             this.lblAppsBinOptions.Name = "lblAppsBinOptions";
             this.lblAppsBinOptions.Size = new System.Drawing.Size(361, 16);
@@ -303,7 +305,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupInstalled.Controls.Add(this.listApps);
             this.groupInstalled.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupInstalled.ForeColor = System.Drawing.Color.Violet;
+            this.groupInstalled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this.groupInstalled.Location = new System.Drawing.Point(28, 82);
             this.groupInstalled.Name = "groupInstalled";
             this.groupInstalled.Size = new System.Drawing.Size(411, 648);
@@ -412,7 +414,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.Controls.Add(this.checkAppsSystem);
             this.Controls.Add(this.btnHMenu);
             this.Controls.Add(this.textSearch);
